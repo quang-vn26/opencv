@@ -6,3 +6,18 @@ Lab 1 - Viết chương trình đọc ảnh, thực hiện các phép toán trê
         5. Kéo dãn độ tương phản
         6. Cắt lát mức xám
         7. Cắt lát mặt phẳng Bit
+
+lenh git:
+…or push an existing repository from the command line
+git remote add origin https://github.com/quang-vn26/opencv.git
+git branch -M main
+git push -u origin main
+
+…or create a new repository on the command line
+echo "# opencv" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/quang-vn26/opencv.git
+git push -u origin main        
