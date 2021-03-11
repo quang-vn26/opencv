@@ -1,0 +1,12 @@
+import cv2
+# anh_goc = cv2.imread('rudi.jpg')
+anh_goc = cv2.imread('rudi.jpg')
+dao_tren_duoi = cv2.flip(anh_goc, 0)
+dao_trai_phai = cv2.flip(anh_goc, 1)
+dao_het = cv2.flip(anh_goc, -1)
+cv2.imshow('Anh Goc', anh_goc)
+cv2.imshow('Dao tren duoi', dao_tren_duoi)
+cv2.imshow('Dao trai phai', dao_trai_phai)
+cv2.imshow('Dao Het', dao_het)
+cv2.waitKey(0)
+cv2.destroyAllWindows()

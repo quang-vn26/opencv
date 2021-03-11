@@ -1,0 +1,8 @@
+Lab 1 - Viết chương trình đọc ảnh, thực hiện các phép toán trên điểm ảnh:
+        1. Đảo ảnh
+        2. Cắt ngưỡng
+        3. Biến đổi Logarithmic
+        4. Biến đổi hàm mũ
+        5. Kéo dãn độ tương phản
+        6. Cắt lát mức xám
+        7. Cắt lát mặt phẳng Bit
