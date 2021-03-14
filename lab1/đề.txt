@@ -6,6 +6,7 @@ Lab 1 - Viết chương trình đọc ảnh, thực hiện các phép toán trê
         5. Kéo dãn độ tương phản
         6. Cắt lát mức xám
         7. Cắt lát mặt phẳng Bit
+        8. Cân bằng histogram
 
 lenh git:
 …or push an existing repository from the command line
@@ -21,3 +22,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/quang-vn26/opencv.git
 git push -u origin main        
+https://github.com/BhanuPrakashNani/Image_Processing
+6. # https://www.geeksforgeeks.org/point-processing-in-image-processing-using-python-opencv/
+7. # https://theailearner.com/2019/01/25/bit-plane-slicing/
+https://github.com/BhanuPrakashNani/Image_Processing

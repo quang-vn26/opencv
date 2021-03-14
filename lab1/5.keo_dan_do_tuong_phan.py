@@ -1,22 +1,27 @@
-'''
-Contrast Stretching: keo dan do tuong phan
-p103
-'''
 import cv2 
-import cv2
-import numpy as np
+import numpy as np 
+  
+def pixelVal(pix, r1, s1, r2, s2): 
+    if (0 <= pix and pix <= r1): 
+        return (s1 / r1)*pix 
+    elif (r1 < pix and pix <= r2): 
+        return ((s2 - s1)/(r2 - r1)) * (pix - r1) + s1 
+    else: 
+        return ((255 - s2)/(255 - r2)) * (pix - r2) + s2 
+  
 
-# Read the image
-img1 = cv2.imread('rudi.jpg',0)
+img = cv2.imread('rudi_xam.jpg') 
+r1 = 70
+s1 = 0
+r2 = 140
+s2 = 255
+  
+pixelVal_vec = np.vectorize(pixelVal) 
+   
+contrast_stretched = pixelVal_vec(img, r1, s1, r2, s2) 
+ 
+cv2.imwrite('contrast_stretch.jpg', contrast_stretched) 
 
-# Create zeros array to store the stretched image
-minmax_img = np.zeros((img1.shape[0],img1.shape[1]),dtype = 'uint8')
+cv2.imshow('contrast_stretch',contrast_stretched)
 
-# Loop over the image and apply Min-Max formulae
-for i in range(img1.shape[0]):
-    for j in range(img1.shape[1]):
-        minmax_img[i,j] = 255*(img1[i,j]-np.min(img1))/(np.max(img1)-np.min(img1))
-
-# Displat the stretched image
-cv2.imshow('Minmax',minmax_img)
 cv2.waitKey(0)
