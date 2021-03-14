@@ -37,4 +37,4 @@ new_img = eight_bit_img+seven_bit_img+six_bit_img+five_bit_img
 cv2.imshow('a2',new_img)
 cv2.waitKey(0)
 
-cv2.waitKey(0) 
+# cv2.waitKey(0) 
