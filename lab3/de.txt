@@ -1,0 +1,9 @@
+Lab 3 - Viết chương trình đọc ảnh, thực hiện nâng cấp ảnh bằng cách sử dụng các kỹ thuật sau:
+3a -  Lọc thông thấp: 
+    • Lý tưởng
+    • Butterworth
+    • Gaussian
+3a -  Lọc thông cao: 
+    • Lý tưởng
+    • Butterworth
+    • Gaussian

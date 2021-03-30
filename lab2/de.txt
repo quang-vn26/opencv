@@ -1,0 +1,6 @@
+Lab 2 - Viết chương trình đọc ảnh, thực hiện nâng cấp ảnh bằng cách sử dụng các kỹ thuật sau:
+2a -  Làm mềm ảnh (blur/smoothing ) bằng lọc Gaussian
+2b - Cải thiện độ sắc nét của ảnh dùng lọc Laplace, Sobel
+2c – Nâng cấp ảnh dùng
+    • Laplacian of Gaussian (LoG)
+    • Difference of Gaussian (DoG)
