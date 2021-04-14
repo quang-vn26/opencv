@@ -1,20 +1,29 @@
 import cv2 as cv
-import numpy as np
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
-img = cv.imread('rudeus.png',0)
-# //su dung cac nguong de cat anh
-ret,thresh1 = cv.threshold(img,127,255,cv.THRESH_BINARY)
-ret,thresh2 = cv.threshold(img,127,255,cv.THRESH_BINARY_INV)
-ret,thresh3 = cv.threshold(img,127,255,cv.THRESH_TRUNC)
-ret,thresh4 = cv.threshold(img,127,255,cv.THRESH_TOZERO)
-ret,thresh5 = cv.threshold(img,127,255,cv.THRESH_TOZERO_INV)
+def Chuyen_Doi_Gamma(img, gamma, c):
+    return float(c) * pow(img, float(gamma))
 
-titles = ['Original Image','BINARY','BINARY_INV','TRUNC','TOZERO','TOZERO_INV']
-images = [img, thresh1, thresh2, thresh3, thresh4, thresh5]
+def show_Chuyen_Doi_Gamma():
+    fig = plt.figure(figsize=(16, 9))
+    (ax1, ax2), (ax3, ax4) = fig.subplots(2, 2)
 
-for i in range(6):
-    plt.subplot(2,3,i+1),plt.imshow(images[i],'gray')
-    plt.title(titles[i])
-    plt.xticks([]),plt.yticks([])
-plt.show()
+    img = cv.imread('sanbay.tif',0)
+    ax1.imshow(img, cmap='gray')
+    ax1.set_title("ảnh gốc")
+
+    y1 = Chuyen_Doi_Gamma(img, 3.0, 1.0)
+    ax2.imshow(y1, cmap='gray')
+    ax2.set_title("gamma=3")
+
+    y2 = Chuyen_Doi_Gamma(img, 4.0, 1.0)
+    ax3.imshow(y2, cmap='gray')
+    ax3.set_title("gamma=4")
+
+    y3 = Chuyen_Doi_Gamma(img, 5.0, 1.0)
+    ax4.imshow(y3, cmap='gray')
+    ax4.set_title("gamma=5")
+    plt.show()
+
+if __name__ == '__main__':
+    show_Chuyen_Doi_Gamma()

@@ -25,3 +25,4 @@ cv2.imshow('Anh Goc',img)
 cv2.imshow('Cat lat muc xam',img2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+# Enhancement 
