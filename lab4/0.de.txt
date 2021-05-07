@@ -1,0 +1,15 @@
+Lab 4 - Viết chương trình thực hiện khôi phục, loại bỏ nhiễu ảnh bằng cách sử dụng các kỹ thuật sau:
+Slide IP.04 tr10
+4a -  Khôi phúc ảnh trong miền không gian: 
+    • Trung bình số học ->ok 
+    • Trung bình Contraharmonic (https://github.com/asadharoon/contra_harmonic_dip_python/blob/master/contra_harmonic_mean_filter_dip_python%20-%20Jupyter%20Notebook.pdf) chua
+    • Lọc trung vị ->ok
+    • Lọc Max, Min ->ok
+    • Lọc Midpoint 
+4b -  Khôi phúc ảnh trong miền tần số: 
+    • Lý tưởng
+    • Butterworth
+    • Gaussian
+
+Bo loc: https://aicurious.io/posts/2018-09-29-loc-anh-image-filtering/    
+Locj harmonic: https://www.geeksforgeeks.org/program-harmonic-mean-numbers/
